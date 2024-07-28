@@ -1,0 +1,329 @@
+/* Overall Structure */
+
+.div1 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+
+.div1 header {
+  background-color: #3B5998; /* Primary Color */
+  color: #fff; /* White for better contrast */
+  padding: 15px 20px; /* Add padding for header content */
+  border-radius: 5px; /* Add border radius for header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
+}
+
+/* Navigation Bar */
+
+.div1 nav {
+  background-color: #E3D0C8; /* Secondary Color */
+  color: #333; /* Text Color */
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px; /* Add padding for navigation items */
+  list-style: none; /* Remove default bullet points */
+  margin: 0; /* Remove default margin */
+  padding-left: 0; /* Remove default padding */
+}
+
+.div1 nav li {
+  display: inline-block; /* Display navigation items inline */
+  margin-right: 20px; /* Add spacing between items */
+  font-weight: bold; /* Make navigation text bold */
+}
+
+.div1 nav li a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color from nav */
+  transition: color 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.div1 nav li a:hover {
+  color: #3B5998; /* Change color on hover (Primary Color) */
+}
+
+/* Search Bar */
+
+.div1 form {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px; /* Add padding for search bar */
+  background-color: #F5F5F5; /* Light background for search bar */
+  border-radius: 5px; /* Add border radius for search bar */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for search bar */
+}
+
+.div1 input {
+  font-size: 1em;
+  min-height: 30px;
+  border-radius: 5px; /* Add border radius for input */
+  border: 1px solid #ddd; /* Light gray border for search input */
+  padding: 5px 10px; /* Add padding for search input text */
+  flex: 1; /* Make input field expand to fill available space */
+}
+
+/* Footer */
+
+.div2 footer {
+  background-color: #3B5998; /* Primary Color */
+  color: #fff; /* White for better contrast */
+  padding: 10px;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 98.5%;
+  margin: 5px;
+  border-radius: 5px; /* Add border radius for footer */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for footer */
+}
+
+/* Other Elements (you can adjust these as needed) */
+
+.div3 {
+  border: 1px solid #ddd; /* Light Gray border */
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+  width: 30%;
+  display: inline-block;
+  transition: background-color 0.5s;
+  color: #333; /* Text Color */
+  text-decoration: none;
+  font-family: Open Sans, sans-serif; /* Change font family */
+}
+
+.div3:hover {
+  background-color: #eee; /* Lighten on hover */
+  cursor: pointer;
+}
+
+
+
+
+.ytgd{
+  display: flex;
+  float: inline-end;
+}
+
+/* chat app css */
+/* .ce-chat-title{
+  margin-left: 0px;
+  margin-right: 0px;
+  display: flex;
+  flex-flow: wrap;
+  flex-grow: 0;
+  flex-shrink: 0;
+  align-items: normal;
+  justify-content: flex-start;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(209, 85, 85, 0.92);
+} */
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent;
+}
+
+
+/* .ce-chat-title-container{
+  background-color: brown;
+  display: none;
+  /* margin-top: 200px;
+  width: 80%; */
+/* } 
+.ce-message-form-container{
+  color: red;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 80%;
+
+}
+.ce-message-images-row{
+  width: 80%;
+}
+.ce-quill-container{
+  width: 80%;
+}
+.ce-chat-feed{
+  width: 80%;
+  height: 650px;
+  max-height: none;
+}
+.ce-feed-container{
+  height: 930px;
+}
+.ce-feed-container-top{
+  height: 0px;
+} */
+/* .chatapp{
+  /* max-width: 80%; */
+ /*}
+ */
+
+ /* contact */
+.group{
+  /* background-color: antiquewhite; */
+  display: flex;
+  font-size: 1.5em;
+  flex-direction: column;
+}
+
+
+/* card */
+/* Card Styling */
+
+/* Card Styling */
+
+.card {
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+  padding: 10px;
+  margin: 10px;
+  text-align: center; /* Text alignment within the card */
+  max-width: 300px;
+  display: inline-block;
+  /* Add background color based on your website's scheme */
+  background-color: #F5F5F5; /* Light gray example */
+}
+
+/* Card Image */
+
+/* About Component Styling */
+
+/* About Component Styling */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px; /* Set a maximum width for responsiveness */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; /* Preferred font stack with good fallback */
+}
+
+.about-description-container {
+  margin-bottom: 20px; /* Add spacing below the description */
+}
+
+.about-description {
+  text-align: justify; /* Justify text for better readability */
+  font-size: 16px; /* Set a comfortable reading size */
+  line-height: 1.7; /* Increased line-height for better spacing */
+}
+
+.developers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Add spacing below the developer section */
+}
+
+.card {
+  background-color: #F5F5F5; /* Light gray background for cards */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 15px; /* Add padding inside the cards */
+  margin: 10px; /* Add spacing between cards */
+  text-align: center; /* Center text within the cards */
+  max-width: 300px; /* Set a maximum width for responsiveness */
+}
+
+.card-img {
+  border-radius: 50%; /* Circular profile pictures */
+  width: 100px; /* Set image width */
+  height: 100px; /* Set image height */
+  margin: 0 auto 10px auto; /* Center image horizontally and add bottom margin */
+}
+
+.card-content {
+  /* Use for the two-column card layout (optional)
+  width: 100%; */
+}
+
+.card-title {
+  font-size: 18px; /* Increase title size */
+  font-weight: bold; /* Make titles bolder */
+  margin-bottom: 5px; /* Add spacing below titles */
+}
+
+.card p {
+  font-size: 14px; /* Adjust paragraph font size */
+  margin-bottom: 10px; /* Increased spacing between paragraphs */
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-around; /* Distribute icons evenly */
+  margin-top: 10px; /* Add spacing above icons */
+}
+
+.icon-container img {
+  width: 24px; /* Set icon width */
+  height: 24px; /* Set icon height */
+  margin: 0 5px; /* Add spacing between icons */
+}
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px; /* Set a maximum width for responsiveness */
+}
+
+.contact-form {
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%; /* Form takes full width within the container */
+}
+
+.contact-form h2 {
+  margin-bottom: 15px; /* Add spacing below the heading */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Add spacing between form groups */
+}
+
+.form-group label {
+  display: block; /* Make labels appear on separate lines */
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%; /* Make input fields take full width */
+  padding: 8px;
+  border: 1px solid #ccc; /* Add a border to input fields */
+  border-radius: 4px; /* Add rounded corners to input fields */
+}
+
+.form-group textarea {
+  height: 100px; /* Set a height for the textarea */
+}
+
+button[type="submit"] {
+  background-color: #4CAF50; /* Green button color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
